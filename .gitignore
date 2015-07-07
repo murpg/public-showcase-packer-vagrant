@@ -1,0 +1,10 @@
+## Packer
+packer_cache/
+*.box
+
+## Vagrant
+.vagrant
+
+## Local files for provisioning
+centos7-local.iso
+lucee-4.5.1.000-pl0-linux-x64-installer.run

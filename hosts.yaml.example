@@ -1,0 +1,5 @@
+# This is an example hosts.yaml file
+---
+local_webroot: ../www
+local_hostname: events.esri.com
+local_hostname_aliases: ['events.esri.com', 'dbg-dev.local']
