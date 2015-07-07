@@ -7,9 +7,9 @@ def parse_config(config_file=File.expand_path(File.join(File.dirname(__FILE__), 
   # default values
   config = {
     'local_webroot'           => '../www',
-    'local_hostname'          => 'events.esri.com',
+    'local_hostname'          => 'lucee.dev.com',
     'local_hostname_aliases'  => [
-       'events.esri.com',
+       'lucee.dev.com',
        'dbg-dev.local'
     ]
   }

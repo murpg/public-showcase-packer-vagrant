@@ -61,4 +61,4 @@ After adding the box into the Vagrant, you can simply type
 $ vagrant up
 ```
 
-and go to `http://localhost:8080`. Server and Web password is `password`.
+and go to `http://lucee.dev.com:8888`. Server and Web password is `password`.
