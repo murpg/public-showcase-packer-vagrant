@@ -1,12 +1,12 @@
 # Showcase Packer-Vagrant
 
-This repository contains template for CentOS 7.1 that can create Vagrant boxes
-with Lucee using Packer.
+This repository contains a link to a template for CentOS 7.1 and Lucee that can create Vagrant boxes
+using the Hasicorp provisioner Packer.
 
 ## Building the Vagrant boxes
 
-To build the boxes, you will need Packer and virtualization software VirtualBox,
-VMWare Workstation or Fusion installed. You can build only specific build types
+To build the boxes, you will need Packer and the virtualization software VirtualBox,
+VMWare Workstation or VMware Fusion installed. You can build only specific build types
 by using `-only` parameter, e.g.:
 
 ```shell
@@ -39,10 +39,10 @@ copied into the project root folder
 
 ## Using generated boxes in Vagrant
 
-After you built the boxes you can use `vagrant box add` command to add generated
-box to the Vagrant. The generated boxes are stored under `box` folder. You can
-use the same name for virtualbox and vmware provider, because the Vagrant is
-smart enough about being able to distinguish between different providers with
+After you build the boxes you can use the `vagrant box add` command to add generated
+boxes to Vagrant. The generated boxes are stored in the `box` folder. You can
+use the same name for virtualbox and vmware provider, because Vagrant is
+smart enough to distinguish between different providers with the
 same names.
 
 ```shell
@@ -55,7 +55,7 @@ $ vagrant box add --name=centos71 box/vmware/centos71-0.1.0.box
 
 ## Running Vagrant
 
-After adding the box into the Vagrant, you can simply type
+After adding the generated box to Vagrant, you can simply type
 
 ```shell
 $ vagrant up
